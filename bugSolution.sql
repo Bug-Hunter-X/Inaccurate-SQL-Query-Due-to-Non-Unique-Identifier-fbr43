@@ -1,0 +1,1 @@
+SELECT * FROM employees WHERE department = 'Sales' AND salary > 100000 AND employee_id IN (SELECT employee_id FROM employees WHERE department = 'Sales' AND salary > 100000); --This revised query uses a subquery to ensure that only unique employee records meeting the specified criteria are selected.
