@@ -1,0 +1,1 @@
+SELECT * FROM employees WHERE department = 'Sales' AND salary > 100000; -- This query might produce unexpected results if there are multiple employees with the same name in the 'Sales' department.  It would be better to use a unique identifier like employee_id instead of relying on name.
